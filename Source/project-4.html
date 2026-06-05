@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài tập 4 | Hợp tác trực tuyến</title>
+  <meta name="description" content="Ứng dụng bộ ba công cụ Trello, Google Drive và Messenger để quản trị tiến độ và phối hợp làm việc nhóm hiệu quả.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <div class="page-transition active"><div class="loader-logo">CNS</div></div>
+  <canvas id="matrix-canvas"></canvas>
+
+  <header class="nav-bar">
+    <a class="nav-brand" href="index.html">
+      <span class="nav-logo">CNS</span>
+      <span>Portfolio Kỹ thuật số</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="projects.html" class="active">Dự án</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
+  </header>
+
+  <main class="section-shell">
+    <div style="margin-bottom: 30px;">
+      <a href="projects.html" class="btn btn-ghost btn-sm">&larr; Quay lại danh sách dự án</a>
+    </div>
+
+    <article class="glass-card fade-up" style="padding: clamp(20px, 5vw, 40px);">
+      <div style="margin-bottom: 30px;">
+        <span class="eyebrow">BÀI TẬP 4 &middot; HỢP TÁC TRỰC TUYẾN</span>
+        <h2 style="margin-top: 10px;">Trello, Google Drive và Messenger trong quá trình hoàn thiện Portfolio</h2>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 8px;">
+          Báo cáo thực hành phối hợp các công cụ đám mây theo từng vai trò cụ thể nhằm duy trì tiến độ thiết kế và nộp bài đúng hạn.
+        </p>
+      </div>
+
+      <div class="project-tags" style="padding: 0 0 20px 0;">
+        <span class="tag-chip cyan">Trello</span>
+        <span class="tag-chip purple">Google Drive</span>
+        <span class="tag-chip green">Messenger</span>
+        <span class="tag-chip blue">Quy trình nhóm</span>
+      </div>
+
+      <div class="evidence-block">
+        <h4>Sự phân vai rõ ràng của các công cụ</h4>
+        <ul>
+          <li><strong>Quản lý tiến độ (Trello):</strong> Trả lời câu hỏi <em>“Việc gì đang ở trạng thái nào?”</em> thông qua bảng Kanban trực quan.</li>
+          <li><strong>Quản lý tài nguyên (Google Drive):</strong> Trả lời câu hỏi <em>“Tài liệu minh chứng, tệp PDF nằm ở đâu?”</em> để đồng bộ hóa không thất lạc.</li>
+          <li><strong>Giao tiếp nhanh (Messenger):</strong> Trả lời câu hỏi <em>“Ai cần cập nhật gấp cái gì, link chạy ổn định chưa?”</em> để phản hồi ngay lập tức.</li>
+        </ul>
+      </div>
+
+      <h4 style="margin: 40px 0 10px; color: var(--accent-cyan);">Quy trình phối hợp làm việc thực tế</h4>
+      <ol class="timeline-list">
+        <li><strong>Trello:</strong> Tạo các cột trạng thái *Cần làm*, *Đang làm* và *Đã hoàn thành*. Phân chia thẻ tác vụ rõ ràng cho từng bài tập môn học.</li>
+        <li><strong>Google Drive:</strong> Thiết kế cấu trúc thư mục đồng bộ hóa lưu trữ (01_TienDo_Trello, 02_Docs_BaoCao, 03_PDF_BaiTap, 04_AnhMinhChung).</li>
+        <li><strong>Messenger:</strong> Nhóm trao đổi trực tuyến để nhắc hẹn rà soát lỗi liên kết và kiểm thử hoạt ảnh trên GitHub Pages.</li>
+      </ol>
+
+      <h4 style="margin: 40px 0 10px; color: var(--accent-cyan);">Bảng phân tích giá trị tối ưu hóa công cụ</h4>
+      <div class="strategy-table workflow-table" aria-label="Bảng tối ưu quy trình hợp tác">
+        <div><strong>Tên công cụ</strong><strong>Vai trò chính</strong><strong>Giá trị tối ưu quy trình</strong></div>
+        <div><span>Trello Kanban</span><span>Quản trị đầu việc, tiến độ thời gian.</span><span>Trực quan hóa khối lượng công việc, tránh bỏ sót đầu mục bài thực hành.</span></div>
+        <div><span>Google Cloud Drive</span><span>Lưu trữ, sao lưu, đồng bộ hóa tự động.</span><span>Phân quyền dễ dàng, chia sẻ link tài liệu PDF minh chứng nhanh chóng.</span></div>
+        <div><span>Messenger Chat</span><span>Giao tiếp nhanh, giải quyết phát sinh.</span><span>Ghi nhận phản hồi sửa đổi tức thời, kiểm tra nhanh lỗi hiển thị liên kết.</span></div>
+      </div>
+
+      <h4 style="margin: 40px 0 10px; color: var(--accent-cyan);">Thư viện minh chứng công cụ (Click để phóng to)</h4>
+      <div class="tool-evidence-grid" aria-label="Minh chứng hợp tác trực tuyến Bài 4">
+        <article class="tool-evidence-card">
+          <div class="tool-evidence-head">
+            <strong>Bảng quản trị Trello</strong>
+            <span>Duy trì tiến độ</span>
+          </div>
+          <img class="tool-shot" src="../assets/images/bai4-trello.png" alt="Minh chứng Trello quản lý tiến độ Bài 4">
+          <p>Các task được chia nhỏ: Soạn tài liệu, xuất PDF, chụp ảnh màn hình và cập nhật code.</p>
+        </article>
+        
+        <article class="tool-evidence-card">
+          <div class="tool-evidence-head">
+            <strong>Cấu trúc Google Drive</strong>
+            <span>Lưu trữ tài nguyên</span>
+          </div>
+          <img class="tool-shot" src="../assets/images/bai4-drive.png" alt="Minh chứng Google Drive lưu trữ tài nguyên Bài 4">
+          <p>Hệ thống thư mục khoa học NDA chứa toàn bộ file nguồn ảnh và báo cáo PDF gốc.</p>
+        </article>
+
+        <article class="tool-evidence-card">
+          <div class="tool-evidence-head">
+            <strong>Messenger Logs</strong>
+            <span>Trao đổi tức thời</span>
+          </div>
+          <img class="tool-shot" src="../assets/images/bai4-chat.png" alt="Minh chứng Messenger trao đổi về cập nhật Bài 2, bổ sung minh chứng Bài 4 và kiểm tra GitHub Pages">
+          <p>Báo cáo thảo luận thực tế về việc kiểm tra chéo độ tương thích của link GitHub Pages.</p>
+        </article>
+      </div>
+
+      <div class="link-row" style="margin-top: 40px;">
+        <a href="../assets/pdfs/Bai4.pdf" target="_blank" rel="noopener">Xem báo cáo PDF đầy đủ</a>
+      </div>
+    </article>
+  </main>
+
+  <button class="chatbot-toggle">🤖</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-header">
+      <div class="bot-avatar">🤖</div>
+      <div class="bot-info"><strong>Trợ lý AI</strong><span>Đang trực tuyến</span></div>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-options"></div>
+  </div>
+  <button class="back-to-top">↑</button>
+
+  <footer class="site-footer">
+    <span>Portfolio Kỹ thuật số &middot; CNS</span>
+    <a href="#" class="back-to-top-link">Lên đầu trang</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

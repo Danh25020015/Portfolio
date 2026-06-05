@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CNS Portfolio | Trang chủ</title>
+  <meta name="description" content="Portfolio cá nhân của Ngô Duy Anh - Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Page Transition overlay -->
+  <div class="page-transition active">
+    <div class="loader-logo">CNS</div>
+  </div>
+
+  <!-- Matrix Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="nav-bar">
+    <a class="nav-brand" href="index.html" aria-label="Trang chủ Portfolio">
+      <span class="nav-logo">CNS</span>
+      <span>Portfolio Kỹ thuật số</span>
+    </a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html" class="active">Trang chủ</a>
+      <a href="projects.html">Dự án</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <canvas id="particle-canvas"></canvas>
+      <div class="hero-content fade-up">
+        <p class="hero-eyebrow">Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo</p>
+        <h1>
+          Xin chào, tôi là <br>
+          <span class="gradient-text glitch" data-text="Ngô Duy Anh">Ngô Duy Anh</span>
+        </h1>
+        <p class="hero-subtitle" id="typing-target" data-text="Portfolio cá nhân tổng hợp kỹ năng số, AI và liêm chính học thuật."></p>
+        
+        <!-- Hero Stats -->
+        <div class="hero-stats stagger">
+          <div class="hero-stat">
+            <span class="stat-number" data-count="6">0</span>
+            <span class="stat-label">Bài tập</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number" data-count="6" data-suffix=" PDF">0</span>
+            <span class="stat-label">Tài liệu</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number" data-count="23" data-suffix=" +">0</span>
+            <span class="stat-label">Minh chứng</span>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="hero-actions stagger">
+          <a href="projects.html" class="btn btn-primary glow-btn">Xem các dự án</a>
+          <a href="about.html" class="btn btn-ghost">Xem giới thiệu</a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-hint">
+        <span>Khám phá thêm</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Nav Cards Section -->
+    <section class="section-shell" style="padding: 80px 0;">
+      <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+        <p class="eyebrow">Khám phá nội dung</p>
+        <h2>Định hướng Portfolio</h2>
+      </div>
+      <div class="nav-cards stagger fade-up">
+        <a href="projects.html" class="nav-card glass-card">
+          <div class="nav-card-icon">📂</div>
+          <h3>Trang dự án</h3>
+          <p>Chi tiết 6 bài tập lớn cùng minh chứng cụ thể và tài liệu PDF đính kèm.</p>
+          <span class="card-arrow">Xem dự án &rarr;</span>
+        </a>
+        <a href="about.html" class="nav-card glass-card">
+          <div class="nav-card-icon">👤</div>
+          <h3>Giới thiệu</h3>
+          <p>Hồ sơ cá nhân, ngành học, sở thích, mục tiêu học tập và định hướng phát triển kỹ năng số.</p>
+          <span class="card-arrow">Xem giới thiệu &rarr;</span>
+        </a>
+        <a href="summary.html" class="nav-card glass-card">
+          <div class="nav-card-icon">✓</div>
+          <h3>Tổng kết</h3>
+          <p>Trải nghiệm thực hiện Portfolio, các kỹ năng đã học, điểm tâm đắc và hướng áp dụng tương lai.</p>
+          <span class="card-arrow">Xem tổng kết &rarr;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatbot Widget -->
+  <button class="chatbot-toggle" aria-label="Mở trợ lý AI">🤖</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-header">
+      <div class="bot-avatar">🤖</div>
+      <div class="bot-info">
+        <strong>Trợ lý AI</strong>
+        <span>Đang trực tuyến</span>
+      </div>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-options"></div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Quay lại đầu trang">↑</button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span>Portfolio Kỹ thuật số &middot; CNS</span>
+    <a href="#" class="back-to-top-link">Lên đầu trang</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

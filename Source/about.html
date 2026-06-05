@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CNS Portfolio | Giới thiệu</title>
+  <meta name="description" content="Hồ sơ cá nhân Ngô Duy Anh, định hướng nghề nghiệp, tự đánh giá kỹ năng số và tổng kết bài học môn học.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Page Transition overlay -->
+  <div class="page-transition active">
+    <div class="loader-logo">CNS</div>
+  </div>
+
+  <!-- Matrix Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="nav-bar">
+    <a class="nav-brand" href="index.html" aria-label="Trang chủ Portfolio">
+      <span class="nav-logo">CNS</span>
+      <span>Portfolio Kỹ thuật số</span>
+    </a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html">Trang chủ</a>
+      <a href="projects.html">Dự án</a>
+      <a href="about.html" class="active">Giới thiệu</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section-shell">
+    
+    <!-- Profile Card Hero -->
+    <div class="about-hero fade-up">
+      <div class="about-portrait">
+        <img src="../assets/images/duyanh-profile.jpg" alt="Ngô Duy Anh">
+      </div>
+      <div class="about-info">
+        <p class="eyebrow" style="background: rgba(0, 240, 255, 0.08); border-color: rgba(0, 240, 255, 0.2); color: var(--accent-cyan);">Sinh viên UET</p>
+        <h1>Ngô Duy Anh</h1>
+        <p class="about-subtitle">Lớp K70I - IT1 &middot; Khoa Công nghệ thông tin &middot; Đại học Công nghệ - ĐHQGHN</p>
+        
+        <dl class="about-facts" aria-label="Thông tin cá nhân chi tiết">
+          <div class="about-fact">
+            <dt>Chuyên ngành</dt>
+            <dd>Công nghệ thông tin</dd>
+          </div>
+          <div class="about-fact">
+            <dt>Sở thích</dt>
+            <dd>Lập trình & Công nghệ</dd>
+          </div>
+          <div class="about-fact">
+            <dt>Định hướng</dt>
+            <dd>Phát triển kỹ năng số & AI</dd>
+          </div>
+        </dl>
+
+      </div>
+    </div>
+
+    <!-- Goals & Directions Section -->
+    <section class="fade-up" style="margin-top: 60px; margin-bottom: 60px;">
+      <div class="section-heading" style="margin-bottom: 25px;">
+        <p class="eyebrow" style="background: rgba(217, 119, 6, 0.08); border-color: rgba(217, 119, 6, 0.2); color: var(--accent-gold);">Mục tiêu & Định hướng</p>
+        <h2>Mục tiêu học tập & Phát triển số</h2>
+      </div>
+
+      <div class="bento-grid" style="margin-top: 25px;">
+        <!-- Goal 1 -->
+        <div class="bento-card">
+          <h3><span class="bento-icon">🎯</span>Mục tiêu học tập</h3>
+          <p>Củng cố khả năng quản lý dữ liệu, tìm kiếm học thuật, viết prompt, hợp tác trực tuyến và sử dụng AI có trách nhiệm trong học tập.</p>
+        </div>
+
+        <!-- Goal 2 -->
+        <div class="bento-card">
+          <h3><span class="bento-icon">🚀</span>Định hướng cá nhân</h3>
+          <p>Xây dựng nền tảng công nghệ thông tin vững chắc, rèn tư duy lập trình và biết dùng công cụ số để học tập, nghiên cứu, làm việc nhóm hiệu quả.</p>
+        </div>
+
+        <!-- Goal 3 -->
+        <div class="bento-card">
+          <h3><span class="bento-icon">💼</span>Mục tiêu Portfolio</h3>
+          <p>Tạo một hồ sơ số có URL dễ chia sẻ, lưu trữ sản phẩm cá nhân bằng PDF và trình bày rõ minh chứng cho từng kỹ năng đã học.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section fade-up">
+      <div class="section-heading" style="margin-bottom: 25px;">
+        <p class="eyebrow" style="background: rgba(16, 185, 129, 0.08); border-color: rgba(16, 185, 129, 0.2); color: var(--accent-green);">Đánh giá năng lực</p>
+        <h2>Kỹ năng số & Trí tuệ nhân tạo</h2>
+      </div>
+      
+      <div class="skill-bars">
+        
+        <!-- Skill 1 -->
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Quản lý tệp &amp; Thiết lập cấu trúc lưu trữ</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-percent="90"></div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Tìm kiếm học thuật nâng cao &amp; Đánh giá nguồn thông tin</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill green" data-percent="85"></div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Kỹ nghệ viết câu lệnh (Prompt Engineering)</span>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill purple" data-percent="95"></div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Hợp tác số &amp; Quản trị tiến độ (Trello, Drive)</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-percent="80"></div>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Sáng tạo nội dung với AI tạo sinh (GenAI Content Creation)</span>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill purple" data-percent="88"></div>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Đạo đức công nghệ &amp; Sử dụng AI có trách nhiệm</span>
+            <span class="skill-percent">100%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill gold" data-percent="100"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="fade-up" style="margin-top: 70px;">
+      <div class="pdf-showcase">
+        <figure class="pdf-preview">
+          <img src="../assets/images/duyanh-profile.jpg" alt="Ảnh hồ sơ Ngô Duy Anh">
+        </figure>
+        <div class="pdf-copy">
+          <span class="pdf-kicker">Bước tiếp theo</span>
+          <h4>Xem phần tổng kết Portfolio</h4>
+          <p>Phần tổng kết được tách thành một trang riêng để trình bày trải nghiệm cá nhân, kỹ năng đã học, điểm tâm đắc, thách thức và hướng áp dụng tương lai theo đúng yêu cầu trong file Word.</p>
+          <div class="pdf-actions">
+            <a class="btn btn-primary btn-sm" href="summary.html">Mở trang Tổng kết</a>
+            <a class="btn btn-ghost btn-sm" href="projects.html">Xem các bài tập</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Chatbot Widget -->
+  <button class="chatbot-toggle" aria-label="Mở trợ lý AI">🤖</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-header">
+      <div class="bot-avatar">🤖</div>
+      <div class="bot-info">
+        <strong>Trợ lý AI</strong>
+        <span>Đang trực tuyến</span>
+      </div>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-options"></div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Quay lại đầu trang">↑</button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span>Portfolio Kỹ thuật số &middot; CNS</span>
+    <a href="#" class="back-to-top-link">Lên đầu trang</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

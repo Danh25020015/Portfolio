@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CNS Portfolio | Các dự án</title>
+  <meta name="description" content="Danh sách 6 bài tập lớn môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Page Transition overlay -->
+  <div class="page-transition active">
+    <div class="loader-logo">CNS</div>
+  </div>
+
+  <!-- Matrix Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="nav-bar">
+    <a class="nav-brand" href="index.html" aria-label="Trang chủ Portfolio">
+      <span class="nav-logo">CNS</span>
+      <span>Portfolio Kỹ thuật số</span>
+    </a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="index.html">Trang chủ</a>
+      <a href="projects.html" class="active">Dự án</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section-shell">
+    <div class="section-heading fade-up" style="text-align: center; margin-bottom: 50px;">
+      <p class="eyebrow">Dự án môn học</p>
+      <h2>Danh sách các bài thực hành</h2>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar fade-up" style="justify-content: center; margin-bottom: 40px;">
+      <button class="filter-btn active" data-filter="all">Tất cả</button>
+      <button class="filter-btn" data-filter="digital-skills">Kỹ năng số</button>
+      <button class="filter-btn" data-filter="ai">Công nghệ & AI</button>
+      <button class="filter-btn" data-filter="collaboration">Hợp tác nhóm</button>
+      <button class="filter-btn" data-filter="ethics">Đạo đức & Trách nhiệm</button>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="project-grid stagger">
+      
+      <!-- Assignment 1 -->
+      <article class="project-card glass-card fade-up" id="bai-1" data-tags="digital-skills">
+        <div class="project-card-header">
+          <span class="project-number">BÀI TẬP 1 &middot; QUẢN LÝ TỆP</span>
+          <h3>Cấu trúc lưu trữ & Quy tắc đặt tên</h3>
+          <p>Thực hành cơ bản trên Windows File Explorer: tổ chức cấu trúc thư mục logic và áp dụng quy tắc đặt tên tệp.</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag-chip cyan">File Explorer</span>
+          <span class="tag-chip purple">Kỹ năng số</span>
+        </div>
+        <div class="project-card-preview" style="padding-bottom: 20px;">
+          <img src="../assets/images/bai1-11.png" alt="Cấu trúc thư mục bài 1">
+        </div>
+        <div style="padding: 0 28px 28px;">
+          <a href="project-1.html" class="btn btn-primary" style="width: 100%; min-height: 40px; font-size: 0.88rem; padding: 8px 16px;">Xem chi tiết bài tập &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Assignment 2 -->
+      <article class="project-card glass-card fade-up" id="bai-2" data-tags="digital-skills,ai">
+        <div class="project-card-header">
+          <span class="project-number">BÀI TẬP 2 &middot; TÌM KIẾM THÔNG TIN</span>
+          <h3>AI & ML trong phát hiện mã độc thế hệ mới</h3>
+          <p>Khai thác thông tin học thuật trên Google Scholar bằng cú pháp tìm kiếm nâng cao và đánh giá tính tin cậy của nguồn tin.</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag-chip cyan">Google Scholar</span>
+          <span class="tag-chip purple">Nghiên cứu học thuật</span>
+        </div>
+        <div class="project-card-preview" style="padding-bottom: 20px;">
+          <img src="../assets/images/bai2-search-clipboard.png" alt="Tìm kiếm Google Scholar bài 2">
+        </div>
+        <div style="padding: 0 28px 28px;">
+          <a href="project-2.html" class="btn btn-primary" style="width: 100%; min-height: 40px; font-size: 0.88rem; padding: 8px 16px;">Xem chi tiết bài tập &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Assignment 3 -->
+      <article class="project-card glass-card fade-up" id="bai-3" data-tags="ai">
+        <div class="project-card-header">
+          <span class="project-number">BÀI TẬP 3 &middot; KỸ NGHỆ PROMPT</span>
+          <h3>So sánh prompt cơ bản, cải tiến & nâng cao</h3>
+          <p>Thiết lập các cấp độ câu lệnh để định hình phản hồi chất lượng từ AI khi xử lý tóm tắt văn bản và ôn tập lập trình Java.</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag-chip cyan">Prompt Engineering</span>
+          <span class="tag-chip purple">Tối ưu AI</span>
+        </div>
+        <div class="project-card-preview" style="padding-bottom: 20px;">
+          <img src="../assets/images/bai3-05.png" alt="Viết prompt bài 3">
+        </div>
+        <div style="padding: 0 28px 28px;">
+          <a href="project-3.html" class="btn btn-primary" style="width: 100%; min-height: 40px; font-size: 0.88rem; padding: 8px 16px;">Xem chi tiết bài tập &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Assignment 4 -->
+      <article class="project-card glass-card fade-up" id="bai-4" data-tags="collaboration">
+        <div class="project-card-header">
+          <span class="project-number">BÀI TẬP 4 &middot; HỢP TÁC TRỰC TUYẾN</span>
+          <h3>Quy trình phối hợp Trello, Drive & Chat</h3>
+          <p>Tổ chức theo dõi tiến độ công việc và lưu trữ tài nguyên minh chứng học tập bằng sự phối hợp ăn ý giữa các công cụ.</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag-chip cyan">Trello & Drive</span>
+          <span class="tag-chip purple">Quản trị dự án số</span>
+        </div>
+        <div class="project-card-preview" style="padding-bottom: 20px;">
+          <img src="../assets/images/bai4-trello.png" alt="Bảng Trello bài 4">
+        </div>
+        <div style="padding: 0 28px 28px;">
+          <a href="project-4.html" class="btn btn-primary" style="width: 100%; min-height: 40px; font-size: 0.88rem; padding: 8px 16px;">Xem chi tiết bài tập &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Assignment 5 -->
+      <article class="project-card glass-card fade-up" id="bai-5" data-tags="ai">
+        <div class="project-card-header">
+          <span class="project-number">BÀI TẬP 5 &middot; SÁNG TẠO NỘI DUNG</span>
+          <h3>Infographic quy trình dùng AI có trách nhiệm</h3>
+          <p>Thiết kế cẩm nang đồ họa tổng kết cách kết hợp AI tạo sinh (Gemini, ChatGPT, DALL-E) cùng tính biên tập của con người.</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag-chip cyan">Canva AI</span>
+          <span class="tag-chip purple">GenAI Content</span>
+        </div>
+        <div class="project-card-preview" style="padding-bottom: 20px;">
+          <img src="../assets/images/bai5-01.png" alt="Infographic bài 5">
+        </div>
+        <div style="padding: 0 28px 28px;">
+          <a href="project-5.html" class="btn btn-primary" style="width: 100%; min-height: 40px; font-size: 0.88rem; padding: 8px 16px;">Xem chi tiết bài tập &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Assignment 6 -->
+      <article class="project-card glass-card fade-up" id="bai-6" data-tags="ethics">
+        <div class="project-card-header">
+          <span class="project-number">BÀI TẬP 6 &middot; ĐẠO ĐỨC CÔNG NGHỆ</span>
+          <h3>Bộ nguyên tắc cá nhân khi sử dụng AI</h3>
+          <p>Báo cáo phân tích rủi ro đạo đức, bản quyền và liêm chính khoa học khi tích hợp các công cụ trí tuệ nhân tạo.</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag-chip cyan">Đạo đức AI</span>
+          <span class="tag-chip purple">Liêm chính học thuật</span>
+        </div>
+        <div class="project-card-preview" style="padding-bottom: 20px;">
+          <img src="../assets/images/bai6-01.png" alt="Bộ nguyên tắc đạo đức bài 6">
+        </div>
+        <div style="padding: 0 28px 28px;">
+          <a href="project-6.html" class="btn btn-primary" style="width: 100%; min-height: 40px; font-size: 0.88rem; padding: 8px 16px;">Xem chi tiết bài tập &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Chatbot Widget -->
+  <button class="chatbot-toggle" aria-label="Mở trợ lý AI">🤖</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-header">
+      <div class="bot-avatar">🤖</div>
+      <div class="bot-info">
+        <strong>Trợ lý AI</strong>
+        <span>Đang trực tuyến</span>
+      </div>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-options"></div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Quay lại đầu trang">↑</button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span>Portfolio Kỹ thuật số &middot; CNS</span>
+    <a href="#" class="back-to-top-link">Lên đầu trang</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

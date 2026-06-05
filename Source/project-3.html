@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài tập 3 | Kỹ nghệ Prompt</title>
+  <meta name="description" content="Thử nghiệm và tối ưu hóa các câu lệnh (prompts) để khai thác hiệu quả tài nguyên từ mô hình ngôn ngữ lớn (LLMs).">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <div class="page-transition active"><div class="loader-logo">CNS</div></div>
+  <canvas id="matrix-canvas"></canvas>
+
+  <header class="nav-bar">
+    <a class="nav-brand" href="index.html">
+      <span class="nav-logo">CNS</span>
+      <span>Portfolio Kỹ thuật số</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="projects.html" class="active">Dự án</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
+  </header>
+
+  <main class="section-shell">
+    <div style="margin-bottom: 30px;">
+      <a href="projects.html" class="btn btn-ghost btn-sm">&larr; Quay lại danh sách dự án</a>
+    </div>
+
+    <article class="glass-card fade-up" style="padding: clamp(20px, 5vw, 40px);">
+      <div style="margin-bottom: 30px;">
+        <span class="eyebrow">BÀI TẬP 3 &middot; KỸ NGHỆ PROMPT</span>
+        <h2 style="margin-top: 10px;">So sánh prompt cơ bản, cải tiến và nâng cao</h2>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 8px;">
+          Thực hiện tối ưu hóa cấu trúc câu lệnh qua ba tác vụ chính: tóm tắt bài báo khoa học, giải thích thuật toán học máy và tạo câu hỏi ôn tập ngôn ngữ Java.
+        </p>
+      </div>
+
+      <div class="project-tags" style="padding: 0 0 20px 0;">
+        <span class="tag-chip cyan">Prompt Engineering</span>
+        <span class="tag-chip purple">ChatGPT & Gemini</span>
+        <span class="tag-chip gold">So sánh hiệu quả</span>
+      </div>
+
+      <h4 style="margin: 30px 0 10px; color: var(--accent-cyan);">Phân cấp cấu trúc Prompt thử nghiệm</h4>
+      <div class="prompt-stack">
+        <div>
+          <span style="color: var(--text-muted); font-weight: 700;">1. Prompt Cơ bản (Baseline Prompt)</span>
+          <p><em>“Tóm tắt bài viết này.”</em></p>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">
+            &rarr; AI phản hồi ngắn và tự do, dễ bỏ sót bối cảnh, phương pháp thực nghiệm khoa học.
+          </p>
+        </div>
+        <div>
+          <span style="color: var(--accent-gold); font-weight: 700;">2. Prompt Cải tiến (Improved Prompt)</span>
+          <p><em>“Tóm tắt bài viết dưới đây thành 5 ý chính, mỗi ý không quá 25 từ.”</em></p>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">
+            &rarr; Thêm ràng buộc cụ thể về số lượng ý và độ dài tệp giúp thông tin cô đọng, dễ đọc lướt nhanh.
+          </p>
+        </div>
+        <div>
+          <span style="color: var(--accent-green); font-weight: 700;">3. Prompt Nâng cao (Advanced Prompt)</span>
+          <p><em>“Bạn là chuyên gia nghiên cứu khoa học máy tính uy tín. Hãy đọc hiểu tài liệu dưới đây, phân tích và trích xuất thông tin: Luận điểm chính, Phương pháp thực nghiệm, Kết quả đo lường và Kết luận. Trình bày thông tin trích xuất dưới dạng bảng so sánh.”</em></p>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">
+            &rarr; Định hình vai trò chuyên gia, định nghĩa rõ các tiêu chí cấu trúc đầu ra, yêu cầu định dạng bảng giúp dữ liệu phân tích cực kỳ sâu sắc và dễ sử dụng.
+          </p>
+        </div>
+      </div>
+
+      <h4 style="margin: 40px 0 10px; color: var(--accent-cyan);">Bảng đối chiếu chất lượng phản hồi</h4>
+      <div class="strategy-table prompt-table" aria-label="Bảng so sánh chất lượng prompt">
+        <div><strong>Tiêu chí đánh giá</strong><strong>Sử dụng Prompt cơ bản</strong><strong>Sử dụng Prompt nâng cao</strong></div>
+        <div><span>Gán vai trò (Role)</span><span>Trống (AI trả lời mặc định).</span><span>Chuyên gia học thuật / Giảng viên CNTT.</span></div>
+        <div><span>Bối cảnh (Context)</span><span>Trống (AI tự suy đoán bối cảnh).</span><span>Xác định rõ đối tượng tiếp nhận và mục tiêu học tập.</span></div>
+        <div><span>Ràng buộc (Constraints)</span><span>Trống (AI viết tự do).</span><span>Số lượng ý, định dạng bảng, cấu trúc cột rõ ràng.</span></div>
+        <div><span>Chất lượng đầu ra</span><span>Thông tin chung chung, đôi khi dư thừa từ ngữ.</span><span>Khoa học, có tính cấu trúc cao, dễ đối chiếu chéo.</span></div>
+      </div>
+
+      <div class="evidence-block" style="margin-top: 30px;">
+        <h4>Nhận xét về cơ chế hoạt động của Prompt nâng cao</h4>
+        <p>
+          Khi cung cấp đầy đủ các yếu tố: <strong>Vai trò + Bối cảnh + Nhiệm vụ + Định dạng đầu ra + Ràng buộc tiêu chí</strong>, mô hình AI sẽ phân bổ trọng số attention tập trung hơn vào phần dữ liệu yêu cầu, giảm thiểu hiện tượng "ảo tưởng" (hallucination) và tạo ra thông tin có giá trị học tập, nghiên cứu thực sự.
+        </p>
+      </div>
+
+      <h4 style="margin: 40px 0 10px; color: var(--accent-cyan);">Thư viện ảnh minh chứng (Click vào ảnh để phóng to)</h4>
+      <div class="media-gallery">
+        <img src="../assets/images/bai3-01.png" alt="Minh chứng viết prompt bài 3 - Thử nghiệm 1">
+        <img src="../assets/images/bai3-02.png" alt="Minh chứng viết prompt bài 3 - Thử nghiệm 2">
+        <img src="../assets/images/bai3-03.png" alt="Minh chứng viết prompt bài 3 - Thử nghiệm 3">
+        <img src="../assets/images/bai3-04.png" alt="Minh chứng viết prompt bài 3 - Thử nghiệm 4">
+        <img src="../assets/images/bai3-05.png" alt="Minh chứng viết prompt bài 3 - Thử nghiệm 5">
+      </div>
+
+      <div class="link-row" style="margin-top: 40px;">
+        <a href="../assets/pdfs/Bai3.pdf" target="_blank" rel="noopener">Xem báo cáo PDF đầy đủ</a>
+      </div>
+    </article>
+  </main>
+
+  <button class="chatbot-toggle">🤖</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-header">
+      <div class="bot-avatar">🤖</div>
+      <div class="bot-info"><strong>Trợ lý AI</strong><span>Đang trực tuyến</span></div>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-options"></div>
+  </div>
+  <button class="back-to-top">↑</button>
+
+  <footer class="site-footer">
+    <span>Portfolio Kỹ thuật số &middot; CNS</span>
+    <a href="#" class="back-to-top-link">Lên đầu trang</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

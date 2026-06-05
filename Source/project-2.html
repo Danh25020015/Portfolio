@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài tập 2 | Tìm kiếm thông tin học thuật</title>
+  <meta name="description" content="Nghiên cứu về AI & Machine Learning trong phát hiện mã độc thế hệ mới sử dụng các cú pháp tìm kiếm nâng cao.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <div class="page-transition active"><div class="loader-logo">CNS</div></div>
+  <canvas id="matrix-canvas"></canvas>
+
+  <header class="nav-bar">
+    <a class="nav-brand" href="index.html">
+      <span class="nav-logo">CNS</span>
+      <span>Portfolio Kỹ thuật số</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="projects.html" class="active">Dự án</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="summary.html">Tổng kết</a>
+    </nav>
+  </header>
+
+  <main class="section-shell">
+    <div style="margin-bottom: 30px;">
+      <a href="projects.html" class="btn btn-ghost btn-sm">&larr; Quay lại danh sách dự án</a>
+    </div>
+
+    <article class="glass-card fade-up" style="padding: clamp(20px, 5vw, 40px);">
+      <div style="margin-bottom: 30px;">
+        <span class="eyebrow">BÀI TẬP 2 &middot; TÌM KIẾM THÔNG TIN</span>
+        <h2 style="margin-top: 10px;">AI và Machine Learning trong phát hiện mã độc thế hệ mới</h2>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 8px;">
+          Ứng dụng các toán tử tìm kiếm nâng cao để sàng lọc các tài liệu học thuật uy tín và đánh giá chéo độ tin cậy của thông tin.
+        </p>
+      </div>
+
+      <div class="project-tags" style="padding: 0 0 20px 0;">
+        <span class="tag-chip cyan">Google Scholar</span>
+        <span class="tag-chip purple">Nghiên cứu học thuật</span>
+        <span class="tag-chip green">NIST AI RMF</span>
+      </div>
+
+      <h4 style="margin: 30px 0 10px; color: var(--accent-cyan);">Chiến lược truy vấn nâng cao (Search Queries)</h4>
+      <div class="query-grid" aria-label="Chiến lược tìm kiếm nâng cao">
+        <code>"malware detection" "machine learning" filetype:pdf</code>
+        <code>site:ieeexplore.ieee.org "malware classification" "machine learning"</code>
+        <code>site:nist.gov "AI Risk Management Framework" filetype:pdf</code>
+        <code>("API call graph" OR "dynamic malware analysis") "deep learning"</code>
+        <code>intitle:"malware detection" "machine learning" survey</code>
+      </div>
+
+      <h4 style="margin: 40px 0 10px; color: var(--accent-cyan);">Bảng đối chiếu và đánh giá toán tử tìm kiếm</h4>
+      <div class="strategy-table" aria-label="Bảng chiến lược tìm kiếm">
+        <div><strong>Toán tử tìm kiếm</strong><strong>Mục đích sử dụng</strong><strong>Đánh giá thực tế</strong></div>
+        <div><span><code>"..."</code> (Ngoặc kép)</span><span>Tìm kiếm chính xác cụm từ khóa quan trọng.</span><span>Loại bỏ hoàn toàn các kết quả lệch chủ đề, tập trung thẳng vào malware.</span></div>
+        <div><span><code>site:</code> (Lọc tên miền)</span><span>Chỉ định tìm kiếm trên một trang web uy tín nhất định.</span><span>Giới hạn kết quả chất lượng cao từ các cổng khoa học lớn như IEEE Xplore, NIST.</span></div>
+        <div><span><code>filetype:pdf</code> (Định dạng file)</span><span>Chỉ lấy các tài liệu lưu trữ ở định dạng PDF.</span><span>Bỏ qua các trang tin tức thương mại, hướng tới báo cáo học thuật, bài báo quốc tế.</span></div>
+        <div><span><code>AND / OR / NOT</code> (Logic)</span><span>Mở rộng hoặc thu hẹp mối quan hệ giữa các từ khóa.</span><span>Liên kết hiệu quả giữa giải pháp kỹ thuật (Học máy) và quản lý rủi ro (NIST).</span></div>
+      </div>
+
+      <div class="evidence-block" style="margin-top: 30px;">
+        <h4>Bộ 3 tiêu chí cốt lõi khi đánh giá nguồn tin học thuật</h4>
+        <ul>
+          <li><strong>Độ uy tín xuất xứ:</strong> Tác giả thuộc cơ quan nghiên cứu lớn, bài báo được bình duyệt chéo (Peer-reviewed) hoặc phát hành từ tổ chức chuẩn hóa như NIST.</li>
+          <li><strong>Tính cập nhật:</strong> Ưu tiên nghiên cứu trong vòng 3-5 năm trở lại đây vì công nghệ mã độc phát triển vô cùng nhanh chóng.</li>
+          <li><strong>Phương pháp luận rõ ràng:</strong> Bài viết phải có số liệu thực nghiệm, nguồn dữ liệu đầu vào (dataset) rõ ràng và đối chiếu kết quả đo lường độ chính xác (Accuracy, F1-Score).</li>
+        </ul>
+      </div>
+
+      <h4 style="margin: 40px 0 10px; color: var(--accent-cyan);">Minh chứng tìm kiếm học thuật</h4>
+      <div class="evidence-showcase" style="display: grid; gap: 24px; grid-template-columns: 1.2fr 0.8fr;">
+        <figure class="evidence-figure" style="margin: 0;">
+          <img src="../assets/images/bai2-search-clipboard.png" alt="Minh chứng tìm kiếm Google Scholar cho NIST AI Risk Management Framework" style="cursor: zoom-in;">
+          <figcaption style="margin-top: 8px;">Dùng cú pháp chuyên sâu trên Google Scholar để định vị tài liệu chính sách AI của NIST.</figcaption>
+        </figure>
+        <div class="source-panel" style="margin: 0;">
+          <h4 style="margin: 0 0 12px 0;">Các nguồn tài liệu tiêu biểu đã nghiên cứu</h4>
+          <dl>
+            <dt>Gibert et al. (2020)</dt>
+            <dd>Tổng hợp phương pháp chuyển mã độc thành hình ảnh để phân loại bằng thuật toán thị giác máy tính CNN.</dd>
+            <dt>Ucci et al. (2019)</dt>
+            <dd>Khảo sát các kỹ thuật trích xuất đặc trưng tĩnh (static analysis) và động (dynamic analysis) trước khi nạp vào AI.</dd>
+            <dt>NIST AI RMF 1.0 (2023)</dt>
+            <dd>Thiết lập tiêu chuẩn quản trị rủi ro AI, đảm bảo các thuật toán học máy được xây dựng đáng tin cậy.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="link-row" style="margin-top: 40px;">
+        <a href="../assets/pdfs/Bai2.pdf" target="_blank" rel="noopener">Xem báo cáo PDF đầy đủ</a>
+      </div>
+    </article>
+  </main>
+
+  <button class="chatbot-toggle">🤖</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-header">
+      <div class="bot-avatar">🤖</div>
+      <div class="bot-info"><strong>Trợ lý AI</strong><span>Đang trực tuyến</span></div>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-options"></div>
+  </div>
+  <button class="back-to-top">↑</button>
+
+  <footer class="site-footer">
+    <span>Portfolio Kỹ thuật số &middot; CNS</span>
+    <a href="#" class="back-to-top-link">Lên đầu trang</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
